@@ -42,9 +42,8 @@ export default class NewData{
         <td><img src="./assets/PikPng.com_trash-png_471206.png" width="20px"/></td>
     </tr>
         `
-        console.log(line)
-        this.container.innerHTML+= line
-
+     console.log(typeof(line))
+        this.container.innerHTML += line;
     }
 
     showForm(){
@@ -53,9 +52,7 @@ export default class NewData{
     }
 
     init(){
-        this.addEvents()
-        
-      
+        this.addEvents()             
     }
 
 }
