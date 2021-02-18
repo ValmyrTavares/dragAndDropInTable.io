@@ -1,0 +1,73 @@
+table{
+    width:60%;
+    background:#ccc;
+    margin:0 auto;
+    position:relative;
+    top: 200px;
+    left:10%;
+}
+table tr{
+    text-align: center;
+}
+table tr td{
+    border-bottom:solid 1px black;
+    font-family: arial;
+    padding:5px
+}
+.selected-item{
+    opacity: .3;
+    background:red;
+    cursor:move;
+}
+.high-light{
+    background:rgb(24, 78, 206);
+}
+header{
+    width:60%;
+    margin:0 auto;
+    position:relative;
+    top: 200px;
+    left:10%;
+    display: flex;
+    justify-content: flex-start;
+}
+header .btn{
+    padding: 3px 15px;
+    border-radius: 50%;
+    font-size: 2rem;
+    background:lightblue;
+    color:blue;
+    border:none;
+    margin: 4%;
+}
+form{
+    display:flex;
+  
+    margin:10px auto;
+    position: relative;
+    top:20px;
+    position:position;
+    top: 0;
+    left:0%;
+}
+form input{
+    width: 181px;
+    height: 26px;
+    margin: 0 2%;
+}
+.create{
+    position: relative;
+    width: 60%;
+    top: 8rem;
+    left: 22rem;
+    display:none;
+}
+.send{
+    position: absolute;
+    top: 38px;
+    left: 16px;  
+   
+}
+.show{
+    display:block;
+}
