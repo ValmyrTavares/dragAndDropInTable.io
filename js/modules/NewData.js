@@ -50,8 +50,8 @@ export default  class NewData {
             <td><img src="./assets/edit.png" width="25px"/> </td>
             <td><img src="./assets/PikPng.com_trash-png_471206.png" width="20px"/></td>`;
    
-        this.container.appendChild(line)   
-        debugger  
+        this.container.appendChild(line) 
+          
         drag.init();
        }
 
