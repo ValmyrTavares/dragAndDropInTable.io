@@ -1,10 +1,11 @@
 import DragTable from "./DragTable.js";
-const drag = new DragTable()
 
 
-export default  class NewData {
+
+export  class  NewData  extends DragTable{
     
-    constructor(){
+    constructor(DragTable){
+      super(DragTable)
         this.btnShow = document.querySelector(".btn")
         this.formContainer = document.querySelector(".create")
         this.btnSend = document.querySelector(".send")
@@ -51,8 +52,8 @@ export default  class NewData {
             <td><img src="./assets/PikPng.com_trash-png_471206.png" width="20px"/></td>`;
    
         this.container.appendChild(line) 
-          
-        drag.init();
+        super.addEvent()
+       
        }
 
     showForm(){      
@@ -60,7 +61,10 @@ export default  class NewData {
     }
 
     init(){
-        this.addEvents()     
+        this.addEvents()    
+        super.init()
+     
+        
     }
 
 }

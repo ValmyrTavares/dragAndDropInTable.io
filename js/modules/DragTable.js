@@ -34,16 +34,8 @@ export default class DragTable{
              item.addEventListener('dragleave',()=>{
                  this.leavingZone(index)
              })
-         })  
-         this.img.forEach(item =>{
-            item.addEventListener('click',()=>{
-                this.Teste()
-            })
-        })        
-     }   
-     Teste(){
-         console.log("teste")
-     }
+         })               
+     }        
  
     leavingZone(){
         this.dropZone.forEach(item => item.classList.remove("high-light"))
@@ -51,6 +43,7 @@ export default class DragTable{
 
     receivingLine(index){     
         this.dropZone[index].classList.add("high-light")  
+        JSON.stringify(this.itemMoved)
         this.container.insertBefore(this.itemMoved, this.dropZone[index])            
     }
     
@@ -66,6 +59,7 @@ export default class DragTable{
      }     
 
      init(){
+         console.log("Sou o init do DragTable")
          this.addEvent()    
         
        
